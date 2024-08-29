@@ -1,18 +1,15 @@
-import React, { useEffect } from 'react'
-export const CalculateDate = () => {
-  const currentDate = new Date()
-  const FormatedDate = currentDate.toLocaleTimeString()
-  console.log(`date calculated at:${FormatedDate}`)
-  return FormatedDate
-}
+import { useEffect, useState } from 'react'
+import { CalculateDate } from '../utils/CalculateDate'
 
-const useInterval = (callback, interval) => {
+export const useInterval = () => {
+  const [time, setTime] = useState(CalculateDate)
   useEffect(() => {
-    const intervalId = setInterval(callback, interval)
+    const intervalId = setInterval(() => {
+      setTime(CalculateDate)
+    }, 1000)
     return () => {
       clearInterval(intervalId)
     }
-  }, [callback, interval])
+  }, [])
+  return { time }
 }
-
-export default useInterval

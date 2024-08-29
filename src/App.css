@@ -3,6 +3,9 @@
   height: 100vh;
   color: whitesmoke;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
 }
 .timerZone {
   display: flex;
@@ -11,12 +14,12 @@
   justify-content: center;
   background-color: black;
   border-radius: 10px;
-  margin: 10px 10px;
-  max-width: 12vw;
+  margin: 20px 20px;
+  max-width: 13vw;
   box-shadow: 0 0 10px 5px lightgrey;
 }
 .time {
-  font-size: 2vw;
+  font-size: 1.5vw;
   width: 70%;
   text-align: center;
 }

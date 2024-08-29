@@ -1,0 +1,22 @@
+.calculatorArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  align-self: center;
+  padding-top: 6vw;
+}
+.number-area {
+  width: 100%;
+  overflow: hidden;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.Calculator-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
