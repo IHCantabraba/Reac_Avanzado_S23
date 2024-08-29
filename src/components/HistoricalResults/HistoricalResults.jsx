@@ -4,7 +4,6 @@ import React from 'react'
 // const initialresult = [8]
 /* tiene que acceder a context Results o no */
 const HistoricalResults = ({ initialResult, Historical }) => {
-  console.log(typeof initialResult)
   return (
     <div className='historial-area'>
       <div className='current-result'>
